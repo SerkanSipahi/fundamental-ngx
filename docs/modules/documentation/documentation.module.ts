@@ -51,6 +51,8 @@ import { CalendarDocsComponent } from './containers/calendar/calendar-docs.compo
 import { DatePickerDocsComponent } from './containers/date-picker/date-picker-docs.component';
 import { TimeDocsComponent } from './containers/time/time-docs.component';
 import { TimePickerDocsComponent } from './containers/time-picker/time-picker-docs.component';
+import { ShellbarDocsComponent } from './containers/shellbar/shellbar-docs.component';
+import { SearchInputDocsComponent } from './containers/search-input/search-input-docs.component';
 
 // examples
 import {
@@ -76,7 +78,6 @@ import {
 import {
     ButtonIconsExampleComponent,
     ButtonOptionsExampleComponent,
-    ButtonRtlExampleComponent,
     ButtonSizesExampleComponent,
     ButtonStateExampleComponent,
     ButtonTypesExampleComponent
@@ -89,6 +90,7 @@ import {
 } from './containers/button-group/examples/button-group-examples.component';
 import { CalendarRangeExampleComponent } from './containers/calendar/examples/calendar-range-example.component';
 import { CalendarSingleExampleComponent } from './containers/calendar/examples/calendar-single-example.component';
+import { CalendarMondayStartExampleComponent } from './containers/calendar/examples/calendar-monday-start-example.component';
 import { DatePickerRangeExampleComponent } from './containers/date-picker/examples/date-picker-range-example.component';
 import { DatePickerSingleExampleComponent } from './containers/date-picker/examples/date-picker-single-example.component';
 import {
@@ -145,6 +147,9 @@ import {
 } from './containers/panel/examples/panel-examples.component';
 import { PaginationExampleComponent } from './containers/pagination/examples/pagination-example.component';
 import { PopoverExampleComponent } from './containers/popover/examples/popover-example.component';
+import { SearchInputExampleComponent } from './containers/search-input/examples/search-input-example.component';
+import { ShellbarBasicExampleComponent } from './containers/shellbar/examples/shellbar-basic-example.component';
+import { ShellbarCollapsibleExampleComponent } from './containers/shellbar/examples/shellbar-collapsible-example.component';
 import {
     SideNavigationCollapsedExampleComponent,
     SideNavigationExampleComponent,
@@ -221,6 +226,8 @@ const ROUTES: Routes = [
             { path: 'pagination', component: PaginationDocsComponent },
             { path: 'panel', component: PanelDocsComponent },
             { path: 'popover', component: PopoverDocsComponent },
+            { path: 'searchInput', component: SearchInputDocsComponent },
+            { path: 'shellbar', component: ShellbarDocsComponent },
             { path: 'sideNavigation', component: SideNavigationDocsComponent },
             { path: 'table', component: TableDocsComponent },
             { path: 'tabs', component: TabsDocsComponent },
@@ -230,7 +237,7 @@ const ROUTES: Routes = [
             { path: 'tree', component: TreeDocsComponent },
             { path: 'installation', component: InstallationDocsComponent },
             { path: 'usage', component: UsageDocsComponent },
-            { path: 'rtl', component: InternationalizationDocsComponent },
+            // { path: 'rtl', component: InternationalizationDocsComponent }, TODO: restore this route when fundamental is RTL ready
             { path: 'home', component: HomeDocsComponent }
         ]
     }
@@ -271,6 +278,8 @@ const ROUTES: Routes = [
         PopoverDocsComponent,
         CalendarDocsComponent,
         DatePickerDocsComponent,
+        SearchInputDocsComponent,
+        ShellbarDocsComponent,
         SideNavigationDocsComponent,
         TileDocsComponent,
         TimeDocsComponent,
@@ -299,7 +308,6 @@ const ROUTES: Routes = [
         BreadcrumbRouterLinkExampleComponent,
         ButtonIconsExampleComponent,
         ButtonOptionsExampleComponent,
-        ButtonRtlExampleComponent,
         ButtonSizesExampleComponent,
         ButtonStateExampleComponent,
         ButtonTypesExampleComponent,
@@ -309,6 +317,7 @@ const ROUTES: Routes = [
         ButtonGroupDefaultExampleComponent,
         CalendarRangeExampleComponent,
         CalendarSingleExampleComponent,
+        CalendarMondayStartExampleComponent,
         DatePickerRangeExampleComponent,
         DatePickerSingleExampleComponent,
         DropdownContextualMenuExampleComponent,
@@ -352,6 +361,9 @@ const ROUTES: Routes = [
         PanelRowColumnExampleComponent,
         PaginationExampleComponent,
         PopoverExampleComponent,
+        SearchInputExampleComponent,
+        ShellbarBasicExampleComponent,
+        ShellbarCollapsibleExampleComponent,
         SideNavigationCollapsedExampleComponent,
         SideNavigationExampleComponent,
         SideNavigationIconsExampleComponent,

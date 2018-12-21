@@ -21,6 +21,8 @@ import { NavbarModule } from './navbar/navbar.module';
 import { PaginationModule } from './pagination/pagination.module';
 import { PanelModule } from './panel/panel.module';
 import { PopoverModule } from './popover/popover.module';
+import { SearchInputModule } from './search-input/search-input.module';
+import { ShellbarModule } from './shellbar/shellbar.module';
 import { SideNavigationModule } from './side-navigation/side-navigation.module';
 import { TableModule } from './table/table.module';
 import { TabsModule } from './tabs/tabs.module';
@@ -32,11 +34,10 @@ import { TimePickerModule } from './time-picker/time-picker.module';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ModalService } from './modal/modal.service';
 
 @NgModule({
-    imports: [CommonModule, RouterModule, FormsModule, NgbModule.forRoot()],
+    imports: [CommonModule, RouterModule, FormsModule],
     declarations: [FundamentalNgxComponent],
     exports: [
         FundamentalNgxComponent,
@@ -62,6 +63,8 @@ import { ModalService } from './modal/modal.service';
         PaginationModule,
         PanelModule,
         PopoverModule,
+        SearchInputModule,
+        ShellbarModule,
         SideNavigationModule,
         TableModule,
         TabsModule,
